@@ -1,0 +1,27 @@
+ackage com.java.basicprogram;
+
+import java.util.Scanner;
+
+public class Primenumber {
+	public static void main(String[]args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("\t\t\t Cheak the number Of Prime Numbers\t\t\t");
+		System.out.print("enter the value :");
+		int val = scan.nextInt();
+		boolean flag = true;
+		
+		for(int i=2;i<=Math.sqrt(val);i++) {
+			if(val%2==0) {
+		     flag = false;
+		     break;
+		         }
+			}
+		if(flag) {
+			System.out.println(val+" "+"in this number is  prime number");
+		}else {
+			System.out.println(val+" "+"in this number is  not-prime number");
+		}
+		
+	}
+		
+}
