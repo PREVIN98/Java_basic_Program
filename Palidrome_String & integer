@@ -1,0 +1,48 @@
+import java.util.*;
+class Palidrome{
+    public static void main(String[]args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("\t\t\t Integer Of Palidrome ");
+        System.out.println("1.Enter the Integer Value :");
+        int num = scan.nextInt();
+        int temp =0;
+        int rem =0;
+        int Original =num;
+        while(num !=0)
+        {
+            rem       = num %10;
+            temp      = (temp * 10) + rem;
+            num        = num / 10;
+        }
+        if(Original == temp)
+        {
+        System.out.println("It is Palidrome");
+        }
+        else
+        {
+        System.out.println("It is Palidrome");
+         }
+    }  
+}
+
+// In this another method -----------> Using the String Method
+
+import java.util.*;
+class Palidrome{
+    public static void main(String[]args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("\t\t\t Integer Of Palidrome ");
+        System.out.println("1.Enter the Integer Value :");
+        String str  = scan.nextLine();
+        String str2 =" ";
+        for(int i=str.length-1;i >= 0;i--){
+            str2 = str2+str.charAt(i);
+        }
+        if(str .equal(str2)) {
+        System.out.println(str2 + " "+ "It is Palidrome");
+         }
+     else {
+        System.out.println(str2 + " "+"It is not Palidrome");
+      }
+    }
+}
