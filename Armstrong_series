@@ -1,0 +1,27 @@
+import java.util.*;
+public class Armstrongnumber {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("\t\t\t Series Of Armstrong Number");
+		System.out.print("Enter The Value : ");
+		int number      = scan.nextInt();
+		
+		for (int i =1; i <= number ;i++) {
+			
+			int Originalnumber  =  i ;
+			int result          =  0 ;
+			
+			while(Originalnumber != 0) {
+				
+	        int reminder      = Originalnumber % 10;
+				result        = result + reminder * reminder * reminder ;
+				Originalnumber= Originalnumber /10;
+			}
+			if(result == i) {
+				System.out.println(i + "it is armstrong number ");
+			}
+		}	
+		
+	}
+}
