@@ -1,0 +1,22 @@
+import java.util.*;
+
+class Array{
+
+	public static void main(String[]args){
+        Scanner scan = new Scanner(System.in);
+        int [] array = new int[5];                   //declaration of array
+        
+        System.out.println("\t\t\t Single - Dimesional Array");
+        System.out.println("Enter the Size :");
+        int val  = scan.nextInt();                   // Getting user input
+    	System.out.println("Enter the value of array :");
+        for (int i=0 ; i<val ;i++) {
+        
+        	array[i]=scan.nextInt();	             // enter the value
+        }
+        for(int i=0; i<array.length;i++) {           //Print the value
+        	System.out.println(i + " "+ " is the index value of "+ " " +array[i]);
+        }
+      
+}
+}
