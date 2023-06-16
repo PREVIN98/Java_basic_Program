@@ -65,3 +65,30 @@ reverse the String
 Java     Python     Sql     C++     Ruby      C#     
 2.) After the Sort : 
  C#     C++     Java     Python     Ruby     Sql     
+ 
+ 
+ // Sort Of Arrays in specific index :
+ import java.util.* ;
+class Arraysort{
+    public static void main(String[]args){
+        int arr[] ={5,47,89,12,32,55,64,71};
+        System.out.print("\tBefore number of index Swap : ");
+        for(int i : arr)
+        {
+            System.out.print(i + "   ");
+        }
+        int firstIndex =2 ;int secondIndex =4;
+        
+        arr[firstIndex]  = arr[firstIndex] + arr[secondIndex];
+        arr[secondIndex] = arr[firstIndex] - arr[secondIndex];
+        arr[firstIndex]  = arr[firstIndex] - arr[secondIndex];
+        
+        System.out.print("\tAfter number of index Swap : ");
+        for(int i : arr){
+            System.out.print(i + "   ");
+        }
+    }
+}
+output:
+Before number of index Swap : 5   47   89   12   32   55   64   71   	
+After number of index Swap  : 5   47   32   12   89   55   64   71   
