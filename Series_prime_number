@@ -1,30 +1,27 @@
-package com.java.basicprogram;
+import java.util.*;           // ===============> Check it is prime or not
+public class Prime {
 
-import java.util.Scanner;
-
-public class Primenumber2 {
-
-public static void main(String[] args) {
-		Scanner scan = new Scanner (System.in);
-		int i,j,count=0;
-	    	System.out.println("\t\t\t Series Of Number Of Prime Number");
-		    System.out.print("enter the value :");
-		     int val = scan.nextInt();
-		     System.out.println("In this series of 1 to" + " " + val + " are : " );
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("\t\t\t Check Prime or Not - Prime");
+		System.out.println("Enter the Number :");
+		int num = scan.nextInt();
+		boolean flag = true;
 		
-		for(i =2 ; i <= val ; i++) {
-			count=0;
-		for(j = 1; j <= i ; j++) {
-			if(i % j == 0) {
-				count++;
-			}
+		for (int i=2;i<=Math.sqrt(num);i++) {
+			if(num %2 == 0) {
+			 flag = false;
+			 break;
+	}
+}
+		if(flag) {
+			System.out.println(num +" " +"it is prime number");
 		}
-		if(count == 2) {
-			System.out.print(i + " ");
-		}
+		else {
+			System.out.println(num+" " +"it is a Not-prime number");
 		}
 	}
 }
-	
-		
-		
+
+--------------------------------------------------------------------------------------------------------------
+// Check Series Of Prime Number:
