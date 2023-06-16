@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Randomnumber {
+
+	public static void main(String[] args) {
+		Scanner scan  = new Scanner(System.in);
+		System.out.println("\t\t\t Generate the Random - Numbers");
+		System.out.print("Enter the Minimum - Number :");
+		int min = scan.nextInt();
+		System.out.print("Enter the Maximum - Number :");
+		int max = scan.nextInt(); 
+		                                                            // entering the value
+		System.out.println("\t\t\t In the Random - Number " + " " + min +" " +"and" + " "+ max );
+		double num = Math.random()*(max - min +1 ) + min;
+		                                                            //applying the formula of double value of random
+		System.out.println("In the Double - Value is :" + num);
+		                                                            //appyling the formula of generate the random number
+		int  num2 = (int) (Math.random()*(max - min +1 ) + min);
+		System.out.println("In the Random - Value is :" + num2);
+
+	}
+}
