@@ -1,0 +1,19 @@
+import java.util.*;
+class Conversion{
+    public static void main(String[]args){
+    Scanner scan = new Scanner(System.in);
+    System.out.println("\t\t\t Converstion Of Number to Alphabets");
+    System.out.println("Enter The Number : ");  // we can get the input from the user
+    int num = scan.nextInt();
+    
+    if(num>0 && num<27){                     // Having the conditions of to enter (0 to 26)
+        char character = (char)(num+64);      //given number addition to ascii value and o/p will display
+        System.out.println(num +" is the character- value are " + character);
+    }else{
+        System.out.println("It is not Range of Character");
+    }
+    }
+}
+--------------------------------------------------------------------------------------------------------------------------------
+ // In this Conversion of number to word:
+ 
