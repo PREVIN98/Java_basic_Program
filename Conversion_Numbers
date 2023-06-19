@@ -16,4 +16,34 @@ class Conversion{
 }
 --------------------------------------------------------------------------------------------------------------------------------
  // In this Conversion of number to word:
+import java.util.*;
+public class Numberconvertion{
+ private static final String [] onedigit ={"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
+ private static final String [] twodigit ={"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+ private static final String[] threedigit ={"", "", "Thousand", "Million", "Billion"};
+ public static void main(String[]args){
+  Scanner scan = new Scanner(System.in);
+  System.out.println("Converstion Of Given Number into Word");
+  System.out.println("Enter The Number :");
+         int num = scan.nextInt();
+         String word =" ";
+         int i =0;
+   while(num >0){
+             int digit = num % 10;
+             String firstword = onedigit[digit];
+             String secondword = twodigit[digit];
+    if(i == 0){
+                 word = firstword;
+     }else if (i == 1) {
+                   word = secondword;
+             }
+             else{
+                  word = word + " " + threedigit[i] + " " + firstword;
+             }
+             num = num / 10;
+            i++;
+         }
+         System.out.println("The number in words is: " + word);  
+     }
+ }
  
