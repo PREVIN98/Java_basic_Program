@@ -45,3 +45,27 @@ System.out.println();                             //new line
 }
 } 
 
+--------+---
+duplicate array:
+
+import java.util.*;
+public class Duplicate {
+    public static void main (String []args){
+        int [] arr  ={ 1,1,2,2,3,4,5,5,};
+        int num    = arr.length;
+           // create the tempary variable
+        int [] temp = new int [num];
+        int j = 0;
+            // copy the initial variable to tempary variable
+        for (int i=0 ; i < arr.length - 1 ; i ++){
+              if (arr[i]!= arr[i +1]){
+                  temp[j++] = arr[i];
+              }
+     
+          }
+          temp [j++] = arr[num - 1];
+          for (int k =0 ; k<j ; k++){
+              System.out.println("Orginal Number are :" + temp[k]);
+          }
+    }
+}
