@@ -20,11 +20,11 @@ Square - Filled Pattern
  *  *  *  *  *  
  *  *  *  *  *  
 -----------------------------------------------------------------------------------------------------------------
-//Right - Half Pyramid:
+//Left - Half Pyramid:
 import java.util.*;
 public class Pattern{
     public static void main(String[]args){
-        System.out.println("Right - Half Pyramid");
+        System.out.println("Left - Half Pyramid");
         int n =5;
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
@@ -35,18 +35,18 @@ public class Pattern{
     }
 }
 O/P:
-Right - Half Pyramid
+Left - Half Pyramid
  *  
  *  *  
  *  *  *  
  *  *  *  *  
  *  *  *  *  *  
 -----------------------------------------------------------------------------------------------------------------------
-//Reverse Right half Pyramid:
+//Reverse Left half Pyramid:
 import java.util.*;
 public class Pattern{
     public static void main(String[]args){
-        System.out.println("Reverse -Right - Half Pyramid");
+        System.out.println("Reverse -Left - Half Pyramid");
         int n =5;
         for(int i=n;i>=1;i--){
             for(int j=1;j<=i;j++){
@@ -57,10 +57,38 @@ public class Pattern{
     }
 }
 O/P:
-Reverse -Right - Half Pyramid
+Reverse -Left - Half Pyramid
  * *  *  *  *  
  *  *  *  *  
  *  *  *  
  *  *  
  *  
 ---------------------------------------------------------------------------------------------------------------------------
+//Right half pyramid:
+public class Rightpyramid {
+	public static void main(String[] args) {
+	         System.out.println("Right half pyramid");
+	      // size of the triangle
+	         int size = 5;
+	         // loop to print the pattern
+	         for (int i = 0; i < size; i++) {
+	           // print spaces
+	           for (int j = 1; j < size - i; j++) {
+	             System.out.print(" ");
+	           }
+	           // print stars
+	           for (int k = 0; k <= i; k++) {
+	             System.out.print("*");
+	           }
+	           System.out.println();
+	}
+	}
+}
+output:
+Right half pyramid
+    *
+   **
+  ***
+ ****
+*****
+--------------------------------------------------------------------------------------------------------------------
