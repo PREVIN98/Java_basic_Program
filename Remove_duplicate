@@ -1,0 +1,35 @@
+//Remove the duplicate elements from the Array:
+import java.util.*;
+public class Removeduplicate {
+	public static void main(String[] args) {
+		int [] arr = {2,2,4,4,6,8,10,10};
+		int j =1;
+		System.out.print("Given - Values Of Array :" );
+		 for(int i =0 ; i<arr.length ;i++) {
+		 System.out.print("  " + arr[i]);
+		  }
+		
+		for(int i =0; i<arr.length -1 ;i++) {
+		if(arr[i] != arr[i +1]) {
+		   arr[j]=arr[i + 1];
+			j++;	
+			}	
+		}
+		System.out.println("\n\ncount  :" +  j);
+		System.out.print("\n\nOriginal - Values Of Array :" );
+		for(int i =0 ; i<j ;i++) {
+			System.out.print("  " + arr[i]);
+		}
+       }
+	}
+output:
+Given - Values Of Array :  2  2  4  4  6  8  10  10
+
+count  :5
+
+
+Original - Values Of Array :  2  4  6  8  10
+--------------------------------------------------------------------------------------------------------------------
+// Print the duplicate Array :
+
+
