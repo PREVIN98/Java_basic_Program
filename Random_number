@@ -20,3 +20,22 @@ public class Randomnumber {
 
 	}
 }
+--------------------------------------------------------------------------------------------
+//Fahereneit To Celius :
+import java.util.*;
+public class Fahereneittocelius{
+    public static void main(String[]args){
+        Scanner scan = new Scanner(System.in);
+        float temperatue;
+        System.out.println("Enter the Temperatue : ");
+        int temp = scan.nextInt();
+        temperatue = ((temp -32)*5)/9;
+         System.out.println("Celius is  : "  + temperatue);
+        
+    }
+}
+//output:
+Enter the Temperatue : 
+100
+Celius is  : 37.0
+
