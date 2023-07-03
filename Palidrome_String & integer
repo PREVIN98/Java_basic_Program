@@ -20,7 +20,7 @@ class Palidrome{
         }
         else
         {
-        System.out.println("It is Palidrome");
+        System.out.println("It is not Palidrome");
          }
     }  
 }
