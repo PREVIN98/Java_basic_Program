@@ -35,10 +35,10 @@ class Palidrome{
         System.out.println("1.Enter the Integer Value :");
         String str  = scan.nextLine();
         String str2 =" ";
-        for(int i=str.length-1;i >= 0;i--){
+        for(int i=str.length()-1;i >= 0;i--){
             str2 = str2+str.charAt(i);
         }
-        if(str .equal(str2)) {
+        if(str .equals(str2)) {
         System.out.println(str2 + " "+ "It is Palidrome");
          }
      else {
